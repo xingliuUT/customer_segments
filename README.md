@@ -26,3 +26,11 @@ Note (m.u.) is shorthand for *monetary units*.
 6) `Delicatessen`: annual spending (m.u.) on and delicatessen products (Continuous); 
 7) `Channel`: {Hotel/Restaurant/Cafe - 1, Retail - 2} (Nominal)
 8) `Region`: {Lisbon - 1, Oporto - 2, or Other - 3} (Nominal) 
+
+## Conclusion
+
+Apply PCA to find 2 principle components to fit model, which explained about 74% of the variance of features. K-Means Clustering method with 2 clusters is used and achieves the silhouette score of 0.4263. 
+
+These analysis confirms with the `Channel` feature that was excluded from the data in the beginning. The customers has two segments: Hotel/Restaurant/Cafe and Retail. 
+
+One way to make use of the customer segments information, A/B test on delivery schedule is briefly discussed.
